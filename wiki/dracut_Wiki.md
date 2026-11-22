@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-dracut Component Wiki
+# SigmaOS-dracut Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-dracut provides dracut component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-dracut provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-dracut Abstraction
-- Fail-Fast on SigmaOS-dracut Initialization Errors
-- Deterministic SigmaOS-dracut Setup
-- Clear Abstraction Over SigmaOS-dracut APIs
-- Composition over Inheritance for SigmaOS-dracut extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-dracut Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-dracut Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-dracut Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-dracut APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-dracut extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-dracut follows a SigmaOS-dracut pattern:
+SigmaOS-dracut follows a SigmaOS-dracut pattern:
 - **SigmaOS-dracut Core**: Provides SigmaOS-dracut support, SigmaOS-dracut management, and SigmaOS-dracut tracking
 - **Management**: Supports SigmaOS-dracut management, SigmaOS-dracut configuration, and SigmaOS-dracut lifecycle
 - **Tracking**: Supports SigmaOS-dracut status, SigmaOS-dracut tracking, and SigmaOS-dracut lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-dracut follows a SigmaOS-dracut pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-dracut by given configuration
--  - Register a SigmaOS-dracut by given name
--  - Get SigmaOS-dracut status and SigmaOS-dracut availability
--  - Track SigmaOS-dracut management and SigmaOS-dracut tracking
+- Manage a SigmaOS-dracut by given configuration
+- Register a SigmaOS-dracut by given name
+- Get SigmaOS-dracut status and SigmaOS-dracut availability
+- Track SigmaOS-dracut management and SigmaOS-dracut tracking
 - Error types for SigmaOS-dracut failure scenarios or unsupported SigmaOS-dracut types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-dracut init, SigmaOS-dracut management)
 3. **Assert**: Verify the expected SigmaOS-dracut results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-dracut initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-dracut failure scenarios
 - Unit tests provided for SigmaOS-dracut management and configuration
